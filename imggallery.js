@@ -49,7 +49,7 @@ function controls() {
 
     function linkhandler() {
         var linkindex = String(categoryindex) + String(imgindex);
-        window.location.href = "index.html" + '#' + linkindex;
+        window.location.href = "imgviewer.html" + '#' + linkindex;
     }
 
     //***************************************************************************************
