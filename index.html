@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="imgviewer.js"></script>
+	<link rel="stylesheet" href="imgviewer.css">
+</head>
+
+<body id="body">
+	<div id="main">
+
+		<div id="view">
+			<div id="canvas">
+				<img id="slot1" alt>
+				<img id="slot2" alt>
+				<img id="slot3" alt>
+			</div>
+
+			<div id="layerpanel">
+
+				<ul id="imglist">
+					<li><span class="caret">Mountains</span>
+						<ul class="nested">
+							<li>
+								<input type="radio" id="mountain1" name="listImg" value="11">
+								<label for="mountain1">Mountain 1</label> 
+							</li>
+							<li>
+								<input type="radio" id="mountain2" name="listImg" value="12">
+								<label for="mountain2">Mountain 2</label> 
+							</li>
+							<li>
+								<input type="radio" id="mountain3" name="listImg" value="13">
+								<label for="mountain3">Mountain 3</label> 
+							</li>
+							<li>
+								<input type="radio" id="mountain4" name="listImg" value="14">
+								<label for="mountain4">Mountain 4</label> 
+							</li>
+							<li>
+								<input type="radio" id="mountain5" name="listImg" value="15">
+								<label for="mountain5">Mountain 5</label> 
+							</li>
+						</ul>
+					</li>
+					<li><span class="caret">Beaches</span>
+						<ul class="nested">
+							<li>
+								<input type="radio" id="beach1" name="listImg" value="21">
+								<label for="beach1">Beach 1</label> 
+							</li>
+							<li>
+								<input type="radio" id="beach2" name="listImg" value="22">
+								<label for="beach2">Beach 2</label> 
+							</li>
+							<li>
+								<input type="radio" id="beach3" name="listImg" value="23">
+								<label for="beach3">Beach 3</label> 
+							</li>
+							<li>
+								<input type="radio" id="beach4" name="listImg" value="24">
+								<label for="beach4">Beach 4</label> 
+							</li>
+							<li>
+								<input type="radio" id="beach5" name="listImg" value="25">
+								<label for="beach5">Beach 5</label> 
+							</li>
+						</ul>
+					</li>
+					<li><span class="caret">Architecture</span>
+						<ul class="nested">
+							<li>
+								<input type="radio" id="structure1" name="listImg" value="31">
+								<label for="structure1">Structure 1</label> 
+							</li>
+							<li>
+								<input type="radio" id="structure2" name="listImg" value="32">
+								<label for="structure2">Structure 2</label> 
+							</li>
+							<li>
+								<input type="radio" id="structure3" name="listImg" value="33">
+								<label for="structure3">Structure 3</label> 
+							</li>
+							<li>
+								<input type="radio" id="structure4" name="listImg" value="34">
+								<label for="structure4">Structure 4</label> 
+							</li>
+							<li>
+								<input type="radio" id="structure5" name="listImg" value="35">
+								<label for="structure5">Structure 5</label> 
+							</li>
+						</ul>
+					</li>
+					<li><span class="caret">Interiors</span>
+						<ul class="nested">
+							<li>
+								<input type="radio" id="interior1" name="listImg" value="41">
+								<label for="interior1">Interior 1</label> 
+							</li>
+							<li>
+								<input type="radio" id="interior2" name="listImg" value="42">
+								<label for="interior2">Interior 2</label> 
+							</li>
+							<li>
+								<input type="radio" id="interior3" name="listImg" value="43">
+								<label for="interior3">Interior 3</label> 
+							</li>
+							<li>
+								<input type="radio" id="interior4" name="listImg" value="44">
+								<label for="interior4">Interior 4</label> 
+							</li>
+							<li>
+								<input type="radio" id="interior5" name="listImg" value="45">
+								<label for="interior4">Interior 5</label> 
+							</li>
+						</ul>
+					</li>
+					<li><span class="caret">Clouds</span>
+						<ul class="nested">
+							<li>
+								<input type="radio" id="cloud1" name="listImg" value="51">
+								<label for="cloud1">Cloud 1</label> 
+							</li>
+							<li>
+								<input type="radio" id="cloud2" name="listImg" value="52">
+								<label for="cloud2">Cloud 2</label> 
+							</li>
+							<li>
+								<input type="radio" id="cloud3" name="listImg" value="53">
+								<label for="cloud3">Cloud 3</label> 
+							</li>
+							<li>
+								<input type="radio" id="cloud4" name="listImg" value="54">
+								<label for="cloud4">Cloud 4</label> 
+							</li>
+							<li>
+								<input type="radio" id="cloud4" name="listImg" value="55">
+								<label for="cloud4">Cloud 5</label> 
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div>
+					<input type="checkbox" id="hidetoggle">
+					<label for="hidetoggle">Hide</label>
+				</div>
+			</div>
+		</div>
+
+		<div id="controls">
+			<div id="opacity">
+				<input type="radio" id="opacity1" name="slot" value="1" checked="checked">
+				<label for="opacity1">1</label> 
+				<input type="radio" id="opacity2" name="slot" value="2">
+				<label for="opacity2">2</label> 
+				<input type="radio" id="opacity3" name="slot" value="3">
+				<label for="opacity3">3</label> 
+
+				<input type="range" min="0" max="1" value="1" step="0.01" id="opacitySlider">
+			</div>
+			<div id="pan">
+				<button id="leftbutton" type="button">
+						<
+				</button>
+				<button id="upbutton" type="button">
+						^
+				</button>
+				<button id="downbutton" type="button">
+						v
+				</button>
+				<button id="rightbutton" type="button">
+						>
+				</button>
+				<button id="panresetbutton" type="button">
+						reset
+				</button>
+			</div>
+			<div id="zoom">
+				<button id="zoominbutton" type="button">
+						+
+				</button>
+				<button id="zoomoutbutton" type="button">
+						-
+				</button>
+				<button id="zoomresetbutton" type="button">
+						reset
+				</button>
+			</div>	
+		</div>	
+
+	</div>
+</body>
+
+</html>

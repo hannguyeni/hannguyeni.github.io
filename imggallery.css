@@ -1,0 +1,88 @@
+body {
+	background-color: black;
+	margin: 0px;
+	padding: 0px;
+}
+
+#gallery {
+	width: 90vw;
+	height: 100%;
+	float: left;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+
+#carousel {
+	background-color: black;
+	height: 96vh;
+	position: relative;
+}
+
+#img1 {
+	left: 25vw;
+	top: 28vh;
+	width: 40vw;
+	height: 40vh;
+	position: relative;
+	float: left;
+}
+
+#img2 {
+	left: 75vw;
+	top: 28vh;
+	width: 40vw;
+	height: 40vh;
+	position: relative;
+}
+
+#img3 {
+	left: 205vw;
+	top: -12.8vh;
+	width: 40vw;
+	height: 40vh;
+	position: relative;
+}
+
+#img4 {
+	left: 255vw;
+	top: -12.8vh;
+	width: 40vw;
+	height: 40vh;
+	position: relative;
+}
+
+#img5 {
+	top: -54vh;
+	padding-left: 385vw;
+	padding-right: 35vw;
+	width: 40vw;
+	height: 40vh;
+	position: relative;
+}
+
+#controls {
+	width: 90vw;
+	background-color: black;
+	position: fixed;
+	text-align: center;
+}
+
+#index {
+	color: white;
+}
+
+#sidebar {
+	color: white;
+	background-color: black;
+	display: block;
+	width: 10vw;
+	height: 100%;
+	position: fixed;
+	right: 0px;
+}
+
+#menu {
+	position: relative;
+	top: 40vh;
+}

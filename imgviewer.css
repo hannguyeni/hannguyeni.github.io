@@ -1,0 +1,123 @@
+#body{
+	margin: 0px;
+	padding: 0px;
+}
+
+#view{
+	background-color: black;
+	left:  0px;
+	top: 0px;
+	width: 100vw;
+	height: 96vh;
+}
+
+#canvas{
+	left: 0px; 
+	top: 0px; 
+	width: 85%; 
+	height: 100%;
+	transform-origin: 50% 50%;
+	float: left;
+}
+
+#slot1{
+	width: 100%; 
+	height: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+#slot2{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: -96.5vh;
+	z-index: 1;
+}
+
+#slot3{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: -193vh;
+	float: left;
+	z-index: 2;
+}
+
+ul, #layerpanel{
+	list-style-type: none;
+}
+
+#layerpanel{
+	background-color: black;
+	color: white;
+	width: 15%;
+	height: 96vh;
+	position: fixed;
+	right: 0px;
+	overflow-y: scroll;
+}
+
+#imglist {
+	padding-left: 10px;
+}
+
+.caret {
+	cursor: pointer;
+	user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: white;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+.nested {
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+#controls{
+	width: 100vw;
+	height: 5vh;
+	background-color: black;
+	position: fixed;
+	text-align: center;
+}
+
+#opacity{
+	color: white;
+	width: 33vw;
+	height: 100%;
+	text-align: center;
+	float: left;
+	display: inline-block;
+}
+
+#opacity #opacitySlider{
+	width: 25vw;
+}
+
+#pan{
+	width: 34vw;
+	height: 100%;
+	background-color: black;
+	float: left;
+	margin: auto;
+}
+
+#zoom{
+	width: 33vw;
+	height: 100%;
+	background-color: black;
+	float: left;
+}
